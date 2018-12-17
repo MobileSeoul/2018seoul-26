@@ -1,0 +1,29 @@
+<resources>
+    <string name="facebook_app_id">1872488512804823</string>
+    <string name="fb_login_protocol_scheme">fb1872488512804823</string>
+
+    <string name="app_name">MyTest</string>
+    <string name="title_activity_home">homeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Sign In -->
+    <string name="signin_google">Login with Google</string>
+    <string name="signin_facebook">Login with Facebook</string>
+    <string name="signup_complete">회원가입 성공</string>
+    <string name="signin_complete">로그인 성공</string>
+    <string name="signout">로그아웃</string>
+    <string name="signout_success">로그아웃 성공</string>
+    <string name="signout_fail">로그아웃 실패</string>
+
+    <string name="bottom_HOME">HOME</string>
+    <string name="bottom_TEST">TEST</string>
+    <string name="bottom_QURAN">QURAN</string>
+    <string name="bottom_COMPASS">COMPASS</string>
+    <string name="bottom_USER">USER</string>
+    <string name="title_activity_quran">quran</string>
+</resources>

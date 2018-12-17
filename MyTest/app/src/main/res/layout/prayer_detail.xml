@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FoodDetailActivity"
+        >
+        <TextView
+            android:id="@+id/Detail_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_below="@id/Detail_Title"
+            android:id="@+id/imagehead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/Detail_imageView1"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/com_facebook_button_background_color_focused_disabled" />
+
+            <ImageView
+                android:id="@+id/Detail_imageView2"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/Detail_imageView3"
+                app:layout_constraintStart_toEndOf="@+id/Detail_imageView1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/com_facebook_button_background_color_focused_disabled" />
+
+            <ImageView
+                android:id="@+id/Detail_imageView3"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/com_facebook_button_background_color_focused_disabled" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/imagehead"
+            android:id="@+id/Detail_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textStyle="bold"
+            />
+
+        <fragment
+            android:layout_below="@id/Detail_Description"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="411dp"
+            android:layout_height="164dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/map"
+            android:id="@+id/linearLayout3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infomation"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Arabic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="OperatingTime"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Quran"
+                app:layout_constraintTop_toBottomOf="@+id/TextView"
+                />
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Compass"
+                app:layout_constraintTop_toBottomOf="@+id/Arabic"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Mat"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="PrayerCostume"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/map"
+            android:id="@+id/linearLayout"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/Operatingtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintTop_toBottomOf="@+id/Infomation"
+                />
+
+            <TextView
+                android:id="@+id/Quran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintTop_toBottomOf="@+id/Arabic"
+                />
+
+            <TextView
+                android:id="@+id/Compass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintTop_toBottomOf="@+id/Food_Price"
+                />
+
+            <TextView
+                android:id="@+id/Mat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintTop_toBottomOf="@+id/Food_Operationtime"
+                />
+
+            <TextView
+                android:id="@+id/Prayercostume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/comment"
+            android:layout_below="@id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/review"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/transfer"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="714dp" />
+
+            <Button
+                android:id="@+id/transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="comment"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="714dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/comment"
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ListView
+                android:id="@+id/text_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>
+
+

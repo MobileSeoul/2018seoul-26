@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Menu">
+        <menu>
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Restaurant" />
+        <item
+            android:id="@+id/nav_pray"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Prayer room" />
+        <item
+            android:id="@+id/nav_fac"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Facility" />
+        <item
+            android:id="@+id/nav_tour"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Seoul Tour" />
+        </menu>
+        </item>
+    </group>
+
+    <item android:title="Preforences">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Logout"/>
+
+        </menu>
+    </item>
+
+</menu>

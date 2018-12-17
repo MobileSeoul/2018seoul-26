@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5dc262</color>
+    <color name="colorPrimaryDark">#309f42</color>
+    <color name="colorAccent">#0d68bd</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="hmm">#303030</color>
+    <color name="saffron">#f8b940</color>
+    <color name="eggplant">#663D4E</color>
+    <color name="sienna">#EB6460</color>
+
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="haeul">#309f42</color>
+    <color name="yellow">#ffff00</color>
+    <color name="black">#000000</color>
+    <color name="green">#285943</color>
+    <color name="water">#2b90d9</color>
+    <color name="hoho">#262163</color>
+    <color name="jinsub">#ff5f2e</color>
+    <color name="purple">#d580ff</color>
+</resources>
